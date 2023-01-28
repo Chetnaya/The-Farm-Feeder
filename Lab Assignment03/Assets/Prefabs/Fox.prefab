@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6814386008396340133}
   - component: {fileID: 6814386008386963351}
   - component: {fileID: 6814386006923969323}
-  - component: {fileID: 1568662996784502627}
+  - component: {fileID: 2044557804}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cf909c7878df54f897380e2154d3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &1568662996784502627
+  speed: 10
+--- !u!114 &2044557804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,7 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdcc78c0557f8d4f822d72cbd192488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topBound: 30
+  topBound: -70
+  lowerBound: -10
 --- !u!1 &6814386008396423109
 GameObject:
   m_ObjectHideFlags: 0

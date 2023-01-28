@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-   public int topBound = -70;
-//    public float lowerBound = -10;
+   public int topBound = 30;
+   public float lowerBound = -10;
 
     // Update is called once per frame
     void Update()
     {
-        // if(transform.position.z == topBound)
+        // if(transform.position.z > topBound)
         // {
         //     Destroy(gameObject);
         // }
@@ -24,15 +24,15 @@ public class DestroyOutOfBounds : MonoBehaviour
 
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        Destroy(collision.gameObject);
-        // if(collision.gameObject.tag == "Finish")
-        // {
-        //     Destroy(gameObject);
-        // }
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     Destroy(collision.gameObject);
+    //     // if(collision.gameObject.tag == "Finish")
+    //     // {
+    //     //     Destroy(gameObject);
+    //     // }
  
-    }
+    // }
    
 }
     

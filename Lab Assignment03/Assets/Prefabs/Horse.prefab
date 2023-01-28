@@ -1121,7 +1121,7 @@ GameObject:
   - component: {fileID: 6238350417952027336}
   - component: {fileID: 6238350417959753944}
   - component: {fileID: 6238350417903989226}
-  - component: {fileID: 3712439836550228897}
+  - component: {fileID: 1317958178}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
@@ -1182,8 +1182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1cf909c7878df54f897380e2154d3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5.81
---- !u!114 &3712439836550228897
+  speed: 12
+--- !u!114 &1317958178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1195,7 +1195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdcc78c0557f8d4f822d72cbd192488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topBound: 30
+  topBound: -70
+  lowerBound: -10
 --- !u!1 &6238350417952367060
 GameObject:
   m_ObjectHideFlags: 0
