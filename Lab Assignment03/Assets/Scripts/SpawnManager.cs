@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     // public int animalIndex;
     
     private float spawnRangex = 13;
-    private float spawnPosz = 44;
+    private float spawnPosz = 4;
 
     public float startDelay = 2;
     public float spawnInterval = 1.5f;
