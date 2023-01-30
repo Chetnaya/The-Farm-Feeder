@@ -8,7 +8,6 @@ public class DestroyOutOfBounds : MonoBehaviour
 //    private int topBound = -60;
 //    private float lowerBound = 1;
 
-    // Update is called once per frame
     void Update()
     {
         // if(transform.position.z > topBound)
@@ -24,15 +23,18 @@ public class DestroyOutOfBounds : MonoBehaviour
 
         
     }
-    // private void OnCollisionEnter(Collision collision)
-    // {
-    //     Destroy(collision.gameObject);
-    //     // if(collision.gameObject.tag == "Finish")
-    //     // {
-    //     //     Destroy(gameObject);
-    //     // }
+    
+    //Destroy if they collide 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(collision.gameObject);
+        if(collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Game Over");
+            Destroy(gameObject);
+        }
  
-    // }
+    }
    
 }
     
