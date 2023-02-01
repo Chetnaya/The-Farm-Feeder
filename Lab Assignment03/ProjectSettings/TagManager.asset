@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameMusic
+  - Dog
   layers:
   - Default
   - TransparentFX

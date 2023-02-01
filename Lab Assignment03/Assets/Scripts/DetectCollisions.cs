@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // private int AddScore = 1;
+    public Score score;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    void OnTriggerEnter(Collider other){
+    void OnTriggerEnter(Collider other)
+    {
         Destroy(gameObject);
         Destroy(other.gameObject);
+        score.AddScore(1);
+
+        // ScoreScript.scoreValue += 1;
+        // other.GetComponent<Score>().scoreValue += AddScore;
+
     }
+    
+    
+    
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.CompareTag("Dog")) 
+    //     {
+    //         Destroy(other.gameObject);
+    //     }   
+    // }
 }
+

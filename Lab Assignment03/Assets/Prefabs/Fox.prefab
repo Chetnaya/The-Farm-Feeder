@@ -179,8 +179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdcc78c0557f8d4f822d72cbd192488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topBound: -70
-  lowerBound: -10
 --- !u!65 &-4281591336188265566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -206,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354cf08d9ea50c479e6c1b71c667427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
 --- !u!54 &8640100340190491545
 Rigidbody:
   m_ObjectHideFlags: 0
