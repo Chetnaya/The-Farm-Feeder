@@ -9,16 +9,30 @@ public class DetectCollisions : MonoBehaviour
 {
     // private int AddScore = 1;
     // public Score score;
+    [SerializeField] private float maxHealth = 3;
+    private float currentHealth = 3;
 
+
+    [SerializeField] public HealthBar _healthbar;
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+        _healthbar.UpdateHealthBar(maxHealth, currentHealth);
+    }
 
     void OnTriggerEnter(Collider other)
     {
+        // Destroy(gameObject);
+        // Destroy(other.gameObject);
+       if(currentHealth<=0){
         Destroy(gameObject);
         Destroy(other.gameObject);
-        // score.AddScore(1);
-
-        // ScoreScript.scoreValue += 1;
-        // other.GetComponent<Score>().scoreValue += AddScore;
+       }
+       else
+       {
+        _healthbar.UpdateHealthBar(maxHealth, currentHealth);
+       }
 
     }
     
