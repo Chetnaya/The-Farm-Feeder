@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class DetectCollisions : MonoBehaviour
 {
     // private int AddScore = 1;
-    public Score score;
+    // public Score score;
 
 
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
         Destroy(other.gameObject);
-        score.AddScore(1);
+        // score.AddScore(1);
 
         // ScoreScript.scoreValue += 1;
         // other.GetComponent<Score>().scoreValue += AddScore;

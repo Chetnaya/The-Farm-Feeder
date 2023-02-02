@@ -306,8 +306,8 @@ GameObject:
   - component: {fileID: 5048801194673370115}
   - component: {fileID: 636329358}
   - component: {fileID: 2607893518046740678}
-  - component: {fileID: -2645673542444250482}
   - component: {fileID: 428688126039580328}
+  - component: {fileID: 4143931506526790842}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -396,19 +396,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.564622, y: 16.375036, z: 20.814743}
   m_Center: {x: -0.18792152, y: 7.687515, z: 1.2544515}
---- !u!114 &-2645673542444250482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5048801195266471117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a354cf08d9ea50c479e6c1b71c667427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
 --- !u!54 &428688126039580328
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -425,6 +412,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4143931506526790842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5048801195266471117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a354cf08d9ea50c479e6c1b71c667427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
 --- !u!1 &5048801195266549147
 GameObject:
   m_ObjectHideFlags: 0
