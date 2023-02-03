@@ -9,8 +9,8 @@ public class DetectCollisions : MonoBehaviour
 {
     // private int AddScore = 1;
     // public Score score;
-    [SerializeField] private float maxHealth = 3;
-    private float currentHealth = 3;
+    [SerializeField] private float maxHealth = 1;
+    private float currentHealth = 1;
 
 
     [SerializeField] public HealthBar _healthbar;
