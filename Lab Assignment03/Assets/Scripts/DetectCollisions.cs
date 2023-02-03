@@ -23,6 +23,7 @@ public class DetectCollisions : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        currentHealth--;
         // Destroy(gameObject);
         // Destroy(other.gameObject);
        if(currentHealth<=0){
