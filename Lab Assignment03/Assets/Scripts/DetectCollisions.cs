@@ -9,9 +9,8 @@ public class DetectCollisions : MonoBehaviour
 {
     // private int AddScore = 1;
     // public Score score;
-    [SerializeField] private float maxHealth = 1;
-    private float currentHealth = 1;
-    //public TextMeshProUGUI ScoreText;
+    [SerializeField] private float maxHealth = 3;
+    [SerializeField] public static float currentHealth = 1;
     public int score =0;
 
 
@@ -28,11 +27,7 @@ public class DetectCollisions : MonoBehaviour
         ScoreTextHandle.text = "Score: " + score;
 
     }
-    void update()
-    {
-        //ScoreText.text = "Score:" ;
-        // ScoreTextHandle.text = "Score" + score;
-    }
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -40,14 +35,16 @@ public class DetectCollisions : MonoBehaviour
 
         // Destroy(gameObject);
         // Destroy(other.gameObject);
-       if(currentHealth<=0){
-
-        score = score + 1;
-        ScoreTextHandle.text = "Score: " + score;
-
+       if(currentHealth==0)
+       {
         Destroy(gameObject);
         Destroy(other.gameObject);
+
         
+
+        // Destroy(gameObject);
+        // Destroy(other.gameObject);
+
        }
        else
        {
@@ -55,7 +52,17 @@ public class DetectCollisions : MonoBehaviour
        }
 
     }
-    
+    void update()
+    {
+        //ScoreText.text = "Score:" ;
+        // ScoreTextHandle.text = "Score" + score;
+        if(currentHealth==0)
+        {
+        score = score + 1;
+        ScoreTextHandle.text = "Score: " + score;
+
+        }
+    }
     
     
     // void OnTriggerEnter(Collider other)

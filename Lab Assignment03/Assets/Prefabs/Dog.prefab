@@ -2311,6 +2311,7 @@ GameObject:
   - component: {fileID: 8621372345629290587}
   - component: {fileID: 8405870869661530099}
   - component: {fileID: 2423250344942185086}
+  - component: {fileID: 1121065851}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Dog
@@ -2421,10 +2422,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a354cf08d9ea50c479e6c1b71c667427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 3
   score: 0
   _healthbar: {fileID: 2121772772}
   ScoreTextHandle: {fileID: 0}
+--- !u!114 &1121065851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7510787559697505561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd962c6e27a9e87448cc503ff83afa6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreTextHandle: {fileID: 0}
+  score: 0
 --- !u!1 &7510787559697506431
 GameObject:
   m_ObjectHideFlags: 0

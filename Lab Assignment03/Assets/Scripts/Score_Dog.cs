@@ -6,28 +6,33 @@ using TMPro;
 
 public class Score_Dog : MonoBehaviour
 {
-    public TextMeshProUGUI ScoreText;
-    // public Text ScoreText;
-    public int score;
+    // private DetectCollisions _detectcollisions;
 
+    [SerializeField] private Text ScoreTextHandle;
+    // [SerializeField] private float currentHealth = 1;
+    // public health = DetectCollisions.currentHealth;
+    
+    public int score = 0;
+    
     void Start()
     {
-        score = 0;
-        ScoreText.text = "Score:";
+       ScoreTextHandle.text = "Score: " + score;
     }
+
     
-    
-    public void updateScore()
-    {
-        ScoreText.text = "Score:" + score;
-    }
+    // public void updateScore()
+    // {
+    //     ScoreText.text = "Score:" + score;
+    // }
 
     void OnTriggerEnter(Collider other)
     {
+        if(DetectCollisions.currentHealth==0)
+        {
         score = score + 1;
+        ScoreTextHandle.text = "Score: " + score;
 
-        // Destroy(gameObject);
-        // Destroy(other.gameObject);
+        }
 
 
     }
