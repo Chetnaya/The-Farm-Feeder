@@ -13,6 +13,7 @@ public class Score_Dog : MonoBehaviour
     // public health = DetectCollisions.currentHealth;
     
     public int score = 0;
+    public int incrementscore = 0;
     
     void Start()
     {
@@ -29,7 +30,7 @@ public class Score_Dog : MonoBehaviour
     {
         if(DetectCollisions.currentHealth==0)
         {
-        score = score + 1;
+        score = score + incrementscore;
         ScoreTextHandle.text = "Score: " + score;
 
         }

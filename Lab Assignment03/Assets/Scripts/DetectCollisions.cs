@@ -11,12 +11,12 @@ public class DetectCollisions : MonoBehaviour
     // public Score score;
     [SerializeField] private float maxHealth = 3;
     [SerializeField] public static float currentHealth = 1;
-    public int score =0;
+    // public int score =0;
 
 
 
     [SerializeField] public HealthBar _healthbar;
-    [SerializeField] private Text ScoreTextHandle;
+    // [SerializeField] private Text ScoreTextHandle;
 
 
     void Start()
@@ -24,7 +24,7 @@ public class DetectCollisions : MonoBehaviour
         currentHealth = maxHealth;
         _healthbar.UpdateHealthBar(maxHealth, currentHealth);
 
-        ScoreTextHandle.text = "Score: " + score;
+        // ScoreTextHandle.text = "Score: " + score;
 
     }
 
@@ -52,17 +52,17 @@ public class DetectCollisions : MonoBehaviour
        }
 
     }
-    void update()
-    {
-        //ScoreText.text = "Score:" ;
-        // ScoreTextHandle.text = "Score" + score;
-        if(currentHealth==0)
-        {
-        score = score + 1;
-        ScoreTextHandle.text = "Score: " + score;
+    // void update()
+    // {
+    //     //ScoreText.text = "Score:" ;
+    //     // ScoreTextHandle.text = "Score" + score;
+    //     if(currentHealth==0)
+    //     {
+    //     score = score + 1;
+    //     ScoreTextHandle.text = "Score: " + score;
 
-        }
-    }
+    //     }
+    // }
     
     
     // void OnTriggerEnter(Collider other)
