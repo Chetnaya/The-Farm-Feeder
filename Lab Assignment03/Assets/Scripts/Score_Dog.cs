@@ -4,31 +4,35 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Score : MonoBehaviour
+public class Score_Dog : MonoBehaviour
 {
     public TextMeshProUGUI ScoreText;
-    public int score = 0;
-    public int maxScore;
+    // public Text ScoreText;
+    public int score;
 
     void Start()
     {
         score = 0;
+        ScoreText.text = "Score:";
     }
-
-    public void AddScore(int newScore)
-    {
-        score += newScore;
     
-    }
+    
     public void updateScore()
     {
-        ScoreText.text = "Score 0" + score;
+        ScoreText.text = "Score:" + score;
     }
 
-    void update()
+    void OnTriggerEnter(Collider other)
     {
-        updateScore();
+        score = score + 1;
+
+        // Destroy(gameObject);
+        // Destroy(other.gameObject);
+
+
     }
+    
+}
 
 
 
@@ -45,4 +49,4 @@ public class Score : MonoBehaviour
     // {
     //     score.text = "Score: " +scoreValue;
     // }
-}
+
