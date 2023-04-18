@@ -408,7 +408,6 @@ GameObject:
   - component: {fileID: -4281591336188265566}
   - component: {fileID: 8640100340190491545}
   - component: {fileID: 7176912654380606165}
-  - component: {fileID: 2109476099294187649}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -521,21 +520,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   _healthbar: {fileID: 1902851802}
---- !u!114 &2109476099294187649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6814386008396420607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd962c6e27a9e87448cc503ff83afa6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreTextHandle: {fileID: 0}
-  score: 0
-  incrementscore: 2
 --- !u!1 &6814386008396423109
 GameObject:
   m_ObjectHideFlags: 0

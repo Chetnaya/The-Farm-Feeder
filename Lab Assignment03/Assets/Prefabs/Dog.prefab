@@ -2311,7 +2311,7 @@ GameObject:
   - component: {fileID: 8621372345629290587}
   - component: {fileID: 8405870869661530099}
   - component: {fileID: 2423250344942185086}
-  - component: {fileID: 1121065851}
+  - component: {fileID: 5746606125059359545}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Dog
@@ -2424,7 +2424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   _healthbar: {fileID: 2121772772}
---- !u!114 &1121065851
+--- !u!114 &5746606125059359545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 2607893518046740678}
   - component: {fileID: 428688126039580328}
   - component: {fileID: 4143931506526790842}
-  - component: {fileID: 9203342125366789361}
+  - component: {fileID: 1259765124968253546}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -686,7 +686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   _healthbar: {fileID: 1775636475}
---- !u!114 &9203342125366789361
+--- !u!114 &1259765124968253546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

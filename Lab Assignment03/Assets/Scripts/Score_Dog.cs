@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+// using TMPro;
 
 public class Score_Dog : MonoBehaviour
 {
     // private DetectCollisions _detectcollisions;
 
+    // [SerializeField] private Text ScoreTextHandle;
     [SerializeField] private Text ScoreTextHandle;
+
     // [SerializeField] private float currentHealth = 1;
     // public health = DetectCollisions.currentHealth;
     
     public int score = 0;
     public int incrementscore = 0;
+    private int finalscore;
     
     void Start()
     {
@@ -30,8 +33,8 @@ public class Score_Dog : MonoBehaviour
     {
         if(DetectCollisions.currentHealth==0)
         {
-        score = score + incrementscore;
-        ScoreTextHandle.text = "Score: " + score;
+        finalscore = score + incrementscore;
+        ScoreTextHandle.text = "Score: " + finalscore;
 
         }
 
